@@ -8,7 +8,6 @@ public class EncryptedNotificationDecorator extends NotificationDecorator {
 
     @Override
     public void send() {
-        // Перед відправкою – шифруємо
         encrypt();
         super.send();
     }
