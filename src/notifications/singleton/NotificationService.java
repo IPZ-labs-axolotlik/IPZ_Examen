@@ -3,12 +3,9 @@ package notifications.singleton;
 import notifications.Notification;
 
 public class NotificationService {
-    // Поле для реалізації Singleton
     private static NotificationService instance;
 
-    private NotificationService() {
-        // Приватний конструктор
-    }
+    private NotificationService() {}
 
     public static NotificationService getInstance() {
         if (instance == null) {
